@@ -7,8 +7,9 @@ import lombok.Data;
  * @date 2018/9/11 10:29
  */
 @Data
-public class Admis {
-    private int LoginId;
+public class Admins {
+    private int Id;
+    private String LoginId;
     private String LoginPwd;
     private String AdminName;
 }

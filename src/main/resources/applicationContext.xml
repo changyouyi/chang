@@ -21,7 +21,7 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
         <property name="mapperLocations" value="classpath:sqlmap/*Mapper.xml"/>
-        <property name="typeHandlersPackage" value="com.chang.Entity"/>
+        <property name="typeAliasesPackage" value="com.chang.Entity"/>
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.chang.Dao"/>

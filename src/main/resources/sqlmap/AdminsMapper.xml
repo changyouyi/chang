@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chang.Dao.AdminsDao">
+    <select id="AdminLogin" parameterType="Admins" resultType="admins">
+        select Id,LoginId,LoginPwd,AdminName from Admins where loginId=#{LoginId} and loginPwd=#{loginPwd}
+    </select>
+</mapper>
