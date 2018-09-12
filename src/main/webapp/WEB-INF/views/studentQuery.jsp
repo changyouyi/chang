@@ -169,7 +169,7 @@
                                     <td class="hidden-phone">${item.studentName}
                                     </td>
                                     <td class="hidden-phone">${item.age}</td>
-                                    <td class="center hidden-phone"><fmt:formatDate value="${item.birthday}" pattern="yyyy-mm-dd"></fmt:formatDate></td>
+                                    <td class="center hidden-phone"><fmt:formatDate value="${item.birthday}" pattern="yyyy-MM-dd"></fmt:formatDate></td>
                                     <td class="hidden-phone"><span class="label label-success">Approved</span></td>
                                 </tr>
                             </c:forEach>
