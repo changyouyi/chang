@@ -56,8 +56,8 @@
                     dataType: 'json',
                     success: function (ret) {
                         if (ret.status == 'ok') {
-                            var txt = "登录成功！";
-                            window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.success);
+                           /* var txt = "登录成功！";
+                            window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.success);*/
                             var href = '/admin/LoginToHome.do';
                             window.top.location.href = href;
                         } else if (ret.status == 'userNameOrPwdError') {
