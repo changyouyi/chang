@@ -5,4 +5,5 @@ package com.chang.Service;
  * @date 2018/9/11 10:32
  */
 public interface StudentClassService {
+    Integer getCount();
 }

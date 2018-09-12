@@ -13,13 +13,13 @@ import java.util.Date;
 @Data
 public class Students {
 
-    private int StudentId;
+    private int studentId;
 
-    private String StudentName;
+    private String studentName;
 
     private String Gender;
 
-    private Timestamp Birthday;
+    private Timestamp birthday;
 
     private BigDecimal StudentIdNo;
 
@@ -27,7 +27,7 @@ public class Students {
 
     private String StuImage;
 
-    private int Age;
+    private int age;
 
     private String  PhoneNumber;
 
