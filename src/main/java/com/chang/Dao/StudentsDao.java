@@ -14,4 +14,6 @@ public interface StudentsDao {
     Integer getCount();
 
     List<Students> getAllStudent();
+
+    void insertStudent(Students students);
 }

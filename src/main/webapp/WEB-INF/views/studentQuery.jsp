@@ -150,7 +150,7 @@
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                           StudentQuery
+                            StudentQuery
                         </header>
                         <table class="table table-striped border-top" id="sample_1">
                             <thead>
@@ -169,18 +169,11 @@
                                     <td class="hidden-phone">${item.studentName}
                                     </td>
                                     <td class="hidden-phone">${item.age}</td>
-                                    <td class="center hidden-phone"><fmt:formatDate value="${item.birthday}" pattern="yyyy-MM-dd"></fmt:formatDate></td>
-                                    <td class="hidden-phone"><span class="label label-success">Approved</span></td>
+                                    <td class="center hidden-phone"><fmt:formatDate
+                                            value="${item.birthday}"></fmt:formatDate></td>
+                                    <td class="hidden-phone"><span class="label label-success"> Detail </span></td>
                                 </tr>
                             </c:forEach>
-                            <%-- <tr class="odd gradeX">
-                                 <td><input type="checkbox" class="checkboxes" value="1"/></td>
-                                 <td>sumon</td>
-                                 <td class="hidden-phone"><a href="mailto:soa bal@gmail.com">lorem-ip@gmail.com</a></td>
-                                 <td class="hidden-phone">33</td>
-                                 <td class="center hidden-phone">15.11.2011</td>
-                                 <td class="hidden-phone"><span class="label label-success">Approved</span></td>
-                             </tr>--%>
                             </tbody>
                         </table>
                     </section>

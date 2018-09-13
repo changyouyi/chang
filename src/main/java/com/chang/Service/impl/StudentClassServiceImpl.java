@@ -1,11 +1,13 @@
 package com.chang.Service.impl;
 
 import com.chang.Dao.StudentClassDao;
+import com.chang.Entity.StudentClass;
 import com.chang.Service.StudentClassService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author cyy
@@ -22,4 +24,11 @@ public class StudentClassServiceImpl implements StudentClassService {
     public Integer getCount() {
         return studentClassDao.getCount();
     }
+
+    @Override
+    public List<StudentClass> getAllClass() {
+        return studentClassDao.getAllClass();
+    }
+
+
 }

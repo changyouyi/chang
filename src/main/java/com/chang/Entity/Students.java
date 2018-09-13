@@ -19,7 +19,7 @@ public class Students {
 
     private String Gender;
 
-    private Timestamp birthday;
+    private Date birthday;
 
     private BigDecimal StudentIdNo;
 

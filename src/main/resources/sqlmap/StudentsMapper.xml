@@ -7,4 +7,8 @@
     <select id="getAllStudent" resultType="students">
         select * from students
     </select>
+    <insert id="insertStudent" parameterType="students" keyProperty="studentId" useGeneratedKeys="true">
+        insert into students(studentname,gender,birthday,studentidno,age,phonenumber,studentaddress,classid)
+         values (#{studentName},#{Gender},#{birthday},#{StudentIdNo},#{age},#{PhoneNumber},#{StudentAddress},#{ClassId})
+    </insert>
 </mapper>

@@ -1,6 +1,7 @@
 package com.chang.Controller;
 
 import com.chang.Entity.Admins;
+import com.chang.Entity.StudentClass;
 import com.chang.Entity.Students;
 import com.chang.Service.AdminsService;
 import com.chang.Service.StudentClassService;
@@ -77,7 +78,8 @@ public class AdminsController {
     @RequestMapping(value = "studentAdd", method = {RequestMethod.GET})
     public ModelAndView studentAdd() {
         ModelAndView modelAndView = new ModelAndView("studentAdd");
-
+        List<StudentClass> studentClasses = studentClassService.getAllClass();
+        modelAndView.addObject("itemList", studentClasses);
         return modelAndView;
     }
 

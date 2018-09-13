@@ -12,4 +12,6 @@ public interface StudentsService {
     Integer getCount();
 
     List<Students> getAllStudent();
+
+    void insertStudent(Students students);
 }

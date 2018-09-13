@@ -1,6 +1,9 @@
 package com.chang.Dao;
 
+import com.chang.Entity.StudentClass;
 import org.springframework.stereotype.Repository;
+
+import java.util.*;
 
 /**
  * @author cyy
@@ -9,4 +12,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface StudentClassDao {
     Integer getCount();
+
+    List<StudentClass> getAllClass();
 }

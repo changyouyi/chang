@@ -4,4 +4,7 @@
     <select id="getCount" resultType="int">
         select count(*) from studentclass
     </select>
+    <select id="getAllClass" resultType="studentclass">
+        select * from studentclass
+    </select>
 </mapper>
